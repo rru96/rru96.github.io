@@ -220,18 +220,7 @@ $(function(){
                 getTestData();
             }
         });
-        $('.answer1').on('click',function(evt){
-            checkAnswer($(evt.target).html());
-        });
-        $('.answer2').on('click',function(evt){
-            checkAnswer($(evt.target).html());
-        });
-        $('.answer3').on('click',function(evt){
-            checkAnswer($(evt.target).html());
-        });
-        $('.answer3').on('click',function(evt){
-            checkAnswer($(evt.target).html());
-        });
+        
     }
     
 
@@ -450,6 +439,18 @@ $(function(){
             if(evt.keyCode == 13){
                 checkAnswer(document.getElementById('aFill').value);
             }
+        });
+        $('.answer1').on('click',function(evt){
+            checkAnswer($(evt.target).html());
+        });
+        $('.answer2').on('click',function(evt){
+            checkAnswer($(evt.target).html());
+        });
+        $('.answer3').on('click',function(evt){
+            checkAnswer($(evt.target).html());
+        });
+        $('.answer4').on('click',function(evt){
+            checkAnswer($(evt.target).html());
         });
         
     }
