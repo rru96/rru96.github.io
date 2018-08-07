@@ -1,0 +1,240 @@
+html, body {
+    background-color: #333;
+    color: #FFF;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px auto;
+    padding: 0px auto;
+    cursor: pointer;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+.main_heading {
+    width: 100%;
+
+}
+
+.app_name {
+    color: #FFF;
+    font-size: 1.01rem;
+    text-align: center;
+    padding: 0px 0px;
+}
+
+.settings_tabs {
+}
+
+.pages {
+    font-size: 4rem;
+    color: #FFF;
+    text-align: center;
+    border: rgba(30,30,30,0.3) solid 0.31rem;
+    border-radius: 0.31rem;
+}
+
+.tmp1:hover {
+    background-color: #2A2A2A;
+}
+
+.app {
+    display: none;
+    visibility: hidden;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.app_name {
+    font-size: 3.4rem;
+    color: #FFF;
+    width: 100%;
+    background-color: rgb(17, 64, 124);
+    text-align: center;
+    text-shadow: 0.21rem 0.21rem 0.8rem #000, 0.21rem -0.21rem 0.8rem #000, 0.21rem 0rem 0.8rem #000;
+}
+
+.reset {
+    font-size: 0.82rem;
+    background-color: rgba(255,255,255,0);
+    color: #999;
+}
+
+.reset:hover {
+    color: #DDD;
+}
+
+.info {
+    color: #FFF;
+}
+
+.info p {
+    display: block;
+}
+
+.begin_button {
+    color: #555;
+    background-color: #222;
+    border: #111 solid 3px;
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.begin_info {
+    font-variant-caps: small-caps;
+    color: #C66;
+    text-align: center;
+}
+
+
+
+.secondary_label {
+    color: rgba(0,0,0, 0.34);
+    font-size: 1.07rem;
+}
+
+.secondary_label:hover {
+    color: rgba(255,255,255,0.55);
+}
+
+.group_label {
+    font-size: 2.4rem;
+    margin-top: 7vh;
+}
+
+.group_option, .group_data {
+    display: inline-block;
+    color: #CCC;
+    font-size: 1.2857rem;
+    border: rgba(255,255,255,0) solid 4px;
+    border-radius: 10px;
+    padding: 0.67vh 0.67vw;
+}
+
+
+.set1 {
+}
+
+
+.box1, .box2, .box3 {
+    color: #FFF;
+    font-size: 6rem;
+    text-align: right;
+    padding-right: 0px;
+}
+
+.box2 , .box3 {
+    display: inline-block;
+}
+
+.answer1, .answer2, .answer3, .answer4 {
+    display: inline-block;
+    color: #FFF;
+    font-size: 4.6rem;
+    text-align: center;
+    padding: 4px px;
+    border: rgba(0,0,0,0) solid 4px;
+    border-radius: 20px;
+}
+
+.answer1:hover, .answer2:hover, .answer3:hover, .answer4:hover {
+    border-color: #AAA;
+    background-color: #222;
+}
+
+#aFill {
+    color: #FFF;
+    font-size: 1.53rem;
+    font-weight: bold;
+    background-color: #222;
+    border: #111 solid 4px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px 0px;
+}
+
+
+
+.orange {
+    color: #FFF;
+    background-color: rgb(210,100,0);
+    border: rgb(255, 160, 0) solid 4px;
+    border-radius: 10px;
+    text-shadow: 1.5px 1.5px 1.5px #000;
+}
+
+.purple {
+    color: #FFF;
+    background-color: #610059;
+    border: rgb(107, 0, 178) solid 4px; 
+    border-radius: 10px;
+    text-shadow: 1.5px 1.5px 1.5px #000;
+}
+
+.green {
+    color: #FFF;
+    background-color: #426100;
+    border: #87B200 solid 4px;
+    border-radius: 10px;
+    text-shadow: 1.5px 1.5px 1.5px #000;
+}
+
+.seagreen {
+    color: #FFF;
+    background-color: #00cc77;
+    border: rgb(0, 114, 66) solid 4px;
+    border-radius: 10px;
+    text-shadow: 1.5px 1.5px 1.5px #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* KEYFRAMES */
+
+@keyframes tReady {
+    0%{
+      color: white;
+      background-color: black;
+    }
+    50%{
+      color: white;
+      background-color: #444;
+    }
+    100%{
+      color: white;
+      background-color: black;
+    }
+  }
+  
+  /* ANIMATIONS */
+  
+  
+  .testReady {
+    animation-name: tReady;
+    animation-duration: 2.37s;
+    animation-iteration-count: infinite;
+  }
+
+
+
