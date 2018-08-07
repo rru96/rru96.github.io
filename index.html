@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mathy : REDUX</title>
+
+        <!-- bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />    
+    </head>
+
+    <body class="container-fluid app">
+        <div class="col-10 offset-1 mathy main_heading row">
+            <p class="col-10 offset-1 app_name">&plus;&nbsp;&minus;&nbsp;&times;&nbsp;&divide;&nbsp;MATHY</p>
+        </div>
+        <div class="col-10 offset-1 settings_tabs row">
+            <p class="col-3 offset-1 pages" id="numbers">&#35;</p>
+            <p class="col-3 pages" id="questions">&#63;</p>
+            <p class="col-3 pages" id="timers">&#8986;</p>
+            <br>
+            <p class="col-1 reset" id="reset">reset</p>
+        </div>
+        <div class="col-6 offset-3 info row">
+            <p class="col-12">Choose settings for test to start.</p>
+            <br>
+            <p class="col-12 begin_button">BEGIN TEST</p>
+            <br>
+            <p class="begin_info"></p>
+        </div>
+        <div class="screen_container">
+            <div class="screen col-10 offset-1" id="screen_numbers">
+                <p class="group_label">SET1</p>
+                <div class="set1">
+                    <p class="group_option all">ALL</p>
+                    <p class="group_option none">NONE</p>
+                    <br>
+                    <p class="group_data number zero" value="0">0</p>
+                    <p class="group_data number" value="1">1</p>
+                    <p class="group_data number" value="2">2</p>
+                    <p class="group_data number" value="3">3</p>
+                    <p class="group_data number" value="4">4</p>
+                    <p class="group_data number" value="5">5</p>
+                    <p class="group_data number" value="6">6</p>
+                    <p class="group_data number" value="7">7</p>
+                    <p class="group_data number" value="8">8</p>
+                    <p class="group_data number" value="9">9</p>
+                    <p class="group_data number" value="10">10</p>
+                    <p class="group_data number" value="11">11</p>
+                    <p class="group_data number" value="12">12</p>
+                </div>
+                
+                <p class="group_label">SET2</p>
+                <div class="set2">
+                    <p class="group_option all">ALL</p>
+                    <p class="group_option none">NONE</p>
+                    <br>
+                    <p class="group_data number zero" value="0">0</p>
+                    <p class="group_data number" value="1">1</p>
+                    <p class="group_data number" value="2">2</p>
+                    <p class="group_data number" value="3">3</p>
+                    <p class="group_data number" value="4">4</p>
+                    <p class="group_data number" value="5">5</p>
+                    <p class="group_data number" value="6">6</p>
+                    <p class="group_data number" value="7">7</p>
+                    <p class="group_data number" value="8">8</p>
+                    <p class="group_data number" value="9">9</p>
+                    <p class="group_data number" value="10">10</p>
+                    <p class="group_data number" value="11">11</p>
+                    <p class="group_data number" value="12">12</p>
+                </div>
+            </div>
+            <div class="screen col-10 offset-1" id="screen_questions">
+                <p class="group_label">SIGN</p>
+                <div class="signs">
+                    <p class="group_data sign" id="plus">&plus;</p>
+                    <p class="group_data sign" id="minus">&minus;</p>
+                    <p class="group_data sign" id="times">&times;</p>
+                    <p class="group_data sign" id="divide">&divide;</p>
+                </div>
+
+                <p class="group_label">A TYPE</p>
+                <div class="answer_types">
+                    <p class="group_data atypes" id="mc">? ? ? ?</p>
+                    <p class="group_data atypes" id="fitb">___</p>
+                </div>
+
+                <p class="group_label">Q COUNT</p>
+                <div class="qcount">
+                    <p class="group_option qadj" id="qm5" value="-5">&minus;5</p>
+                    <p class="group_option qadj" id="qm1" value="-1">&minus;1</p>
+                    <p class="group_data question_total"></p>
+                    <p class="group_option qadj" id="qp1" value="1">&plus;1</p>
+                    <p class="group_option qadj" id="qp5" value="5">&plus;5</p>
+                </div>
+
+            </div>
+            <div class="screen col-10 offset-1" id="screen_timers">
+                <p class="group_label">Q TIME</p>
+                <div class="question_timer">
+                    <p class="group_option qt_kill" value="0">NONE</p>
+                    <p class="group_option qsec" id="qtm5" value="-5000">&minus;5</p>
+                    <p class="group_option qsec" id="qtm1" value="-1000">&minus;1</p>
+                    <p class="group_data question_per"></p>
+                    <p class="group_option qsec" id="qtp1" value="1000">&plus;1</p>
+                    <p class="group_option qsec" id="qtp5" value="5000">&plus;5</p>
+                </div>
+
+                <p class="group_label">T TIME</p>
+                <div class="test_timer">
+                    <p class="group_option tt_kill" value="0">NONE</p>
+                    <p class="group_option tadj" id="tm5" value="-5000">&minus;5</p>
+                    <p class="group_option tadj" id="tm1" value="-1000">&minus;1</p>
+                    <p class="group_data test_per"></p>
+                    <p class="group_option tadj" id="tp1" value="1000">&plus;1</p>
+                    <p class="group_option tadj" id="tp5" value="5000">&plus;5</p>
+                </div>
+            </div>
+            <div class="screen col-10 offset-1" id="screen_test">
+                <p class="group_label">TESTING</p>
+                <p class="secondary_label">RETURN</p>
+                <div class="test_question">
+                    <div class="box1 col-2 offset-6 testNums"></div>
+                    <div class="box2 col-2 offset-4 testNums"></div>
+                    <div class="box3 col-2 testNums"></div>
+                </div><br>
+                
+                <div class="test_answer testNums row">
+                    <div class="col-2 offset-2 answer1"></div>
+                    <div class="col-2 answer2"></div>
+                    <div class="col-2 answer3"></div>
+                    <div class="col-2 answer4"></div>
+                </div><br>
+                <div class="answer_input testNums">
+                    <input class="col-4 offset-4" type="text" name="answer_fillin" id="aFill" autofocus>
+                </div>
+            </div>
+            <div class="screen col-10 offset-1" id="screen_results">
+                <p class="group_label">RESULTS</p>
+                <p class="secondary_label">RETURN</p>
+                <div class="test_results">
+                    <div class="correct"></div>
+                    <div class="wrong"></div>
+                    <div class="timeleft"></div>
+                </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
