@@ -1,27 +1,50 @@
-let API_KEY = "a99f0f1f";
-let URL = "http://www.omdbapi.com/?apikey="+ API_KEY+"&";
+document.onreadystatechange = () => {
+    if(document.readyState === "complete"){
+        
+        // let d, h, m, s;
+        // function currentTime(){
+        //     const today = new Date();
+        //     d = today.getDay();
+        //     h = today.getHours();
+        //     m = today.getMinutes();
+        //     s = today.getSeconds();
+        //     m = checkTime(m);
+        //     s = checkTime(s);
+            
+            
+        //     let t = setTimeout(()=>{
+        //         checkOpen();
+        //         currentTime();
+        //     },1000);
+        // }
 
-let movie_list = {
-    "Movies" : [
-        {
-            "title" : "The Shawshank Redemption",
-            "imdb" : "tt0111161",
-            "why" : ""
-        },
-        {
-            "title" : "The Dark Knight",
-            "imdb" : "tt0468569",
-            "why" : ""
-        },
-        {
-            "title" : "12 Angry Men",
-            "imdb" : "",
-            "why" : ""
-        },
-        {
-            "title" : "Fight Club",
-            "imdb" : "",
-            "why" : ""
+        // function checkTime(i){
+        //     if(i < 10){
+        //         i = "0" + i;
+        //         return i;
+        //     }
+        // }
+        // currentTime();
+
+        
+
+
+        function remapScreen(){
+            let containerTop = document.getElementsByClassName("container-top-fixed")[0];
+            let containerBottom = document.getElementsByClassName("container-bottom-fixed")[0];
+            let containerContent = document.getElementsByClassName("container-content")[0];
+
+            let cth = containerTop.clientHeight;
+            let cbh = containerBottom.clientHeight;
+
+            containerContent.style.marginTop = cth;
         }
-    ]
+
+
+        window.onresize = () =>{
+            remapScreen()
+        }
+
+
+    }
 }
