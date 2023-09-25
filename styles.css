@@ -1,4 +1,145 @@
 html {
-    background-color: black;
     color: white;
+    background-color: black;
+}
+
+body {
+    width: 100%;
+    background-color: #000;
+}
+
+
+
+.title1 {
+    font-family: "Jost";
+    font-size: 1.8rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+    padding: 4px;
+}
+
+.title2 {
+    color: #22DD22;
+    font-family: "Archivo Black";
+    font-size: 1.65rem;
+    line-height: 1.3rem;
+    padding: 4px;
+}
+
+.nonprofit {
+    font-family: "Gelasio";
+    line-height: 1.3rem;
+}
+
+.hours {
+    font-family: "Jost";
+    font-weight: 450;
+    line-height: 1.3rem;
+}
+
+.phone {
+    color: #22DD22;
+    font-family: "Shanti";
+    line-height: 1.3rem;
+}
+
+.address {
+    font-family: "Jost";
+    line-height: 1.3rem;
+}
+
+
+
+.bg-container {
+    width: 100%;
+    height: auto;
+}
+
+.bg {
+    width: 260px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+}
+
+.container-top-fixed {
+    color: #FFF;
+    background-color: #111;
+    border-bottom: 2px solid #444;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.7rem 0 0.7rem 0.7rem;
+    z-index: 1;
+}
+
+.content {
+    color: #FFF;
+    opacity: 0.9;
+    width: 84%;
+    margin-left: 8%;
+    padding: 4px 4px;
+    text-wrap: balance;
+    
+}
+
+.container-content {
+    background-color: #000;
+}
+
+.container-bottom-fixed {
+    color: #FFF;
+    background-color: #111;
+    border-top: 2px solid #444;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.7rem 0 0.7rem 0.7rem;
+    z-index: 1;
+}
+
+.nonprofitSpan, .addressSpan, .hourSpan {
+    display: inline-block;
+}
+
+
+@media screen and (min-width: 481px){
+    
+}
+
+@media screen and (min-width: 540px){
+    .phone {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    .address {
+        position: fixed;
+        top: 30px;
+        right: 10px;
+    }
+
+    .addressSpan {
+        text-align: right;
+        display: block;
+        
+    }
+}
+
+@media screen and (min-width: 769px){
+    
+}
+
+
+@media screen and (min-width: 1025px){
+    
+}
+
+
+@media screen and (min-width: 1201px){
+    
 }
