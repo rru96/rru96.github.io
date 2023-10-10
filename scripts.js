@@ -28,9 +28,9 @@ document.onreadystatechange = () => {
             for (let i = 0; i < animals.length; i++) {
                 let card = "";
                 card += "<div class='card'>" +
-                    "<div class='image-container'><img class='animal-image' src='./img/" + animals[i][csvHeaders[0]] + ".jpg'></div>";
+                    "<div class='image-container'><img class='animal-image' src='./" + animals[i][csvHeaders[0]] + ".jpg'></div>";
                     if(animals[i][csvHeaders[adoption_index]] !=""){
-                        card+= "<img class='animal-image adopted' src='./img/adopted.png'></div>"
+                        card+= "<img class='animal-image adopted' src='./adopted.png'></div>"
                     };                   
                     card+= "<div class='info-container'>";
                     
