@@ -6,11 +6,12 @@ html {
 body {
     width: 100%;
     background-color: #000;
+    margin: 0;
+    margin-top: 20vh;
 }
 
-
-
 .title1 {
+    color: #fff;
     font-family: "Jost";
     font-size: 1.8rem;
     line-height: 1.3rem;
@@ -27,11 +28,13 @@ body {
 }
 
 .nonprofit {
+    color: #fff;
     font-family: "Gelasio";
     line-height: 1.3rem;
 }
 
 .hours {
+    color: #999;
     font-family: "Jost";
     font-weight: 450;
     line-height: 1.3rem;
@@ -41,14 +44,22 @@ body {
     color: #22DD22;
     font-family: "Shanti";
     line-height: 1.3rem;
+    display: block;
 }
 
 .address {
     font-family: "Jost";
     line-height: 1.3rem;
+    display: inline;
 }
 
+.address .addressSpan {
+    display: block;
+}
 
+.addressSpan {
+    display: block;
+}
 
 .bg-container {
     width: 100%;
@@ -63,83 +74,149 @@ body {
     opacity: 0.3;
 }
 
+.social-container {
+    position: fixed;
+    width: 90vw;
+    top: 0.3rem;
+    right: 0.3rem;
+    z-index: 1;
+}
+
+.social-container img {
+    width: 2rem;
+    background-color: #fff;
+    float: right;
+    margin: 0.15rem;
+    border-radius: 0.3rem;
+}
+
 .container-top-fixed {
-    color: #FFF;
-    background-color: #111;
-    border-bottom: 2px solid #444;
+    width: 100vw;
+    height: 7.6rem;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 0.7rem 0 0.7rem 0.7rem;
-    z-index: 1;
+    background-color: rgba(30,30,30,1);
+    border-bottom: 1px solid #444;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
 }
 
-.content {
-    color: #FFF;
-    opacity: 0.9;
-    width: 84%;
-    margin-left: 8%;
-    padding: 4px 4px;
-    text-wrap: balance;
-    
+.contact {
+    width: 100vw;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(30,30,30,1);
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-top: 1px solid #444;
+}
+
+.phone, .address .addressSpan {
+    margin-left: 0.5rem;
 }
 
 .container-content {
-    background-color: #000;
-}
-
-.container-bottom-fixed {
-    color: #FFF;
-    background-color: #111;
-    border-top: 2px solid #444;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    padding: 0.7rem 0 0.7rem 0.7rem;
-    z-index: 1;
+    z-index: 3;
 }
 
-.nonprofitSpan, .addressSpan, .hourSpan {
+.arrows {
+    position: fixed;
+    width: 100%;
+    background-color: turquoise;
+    z-index: 5;
+}
+
+.arrow-left, .arrow-right {
+    position: fixed;
+    margin-top: 0rem;
     display: inline-block;
+    width: 40%;
+
 }
 
+.arrow-left {
+    width: 4rem;
+    left: 2rem;
+    text-align: end;
+}
 
-@media screen and (min-width: 481px){
+.arrow-right {
+    width: 4rem;
+    margin-left: 12rem;
     
 }
 
-@media screen and (min-width: 540px){
-    .phone {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-    }
-
-    .address {
-        position: fixed;
-        top: 30px;
-        right: 10px;
-    }
-
-    .addressSpan {
-        text-align: right;
-        display: block;
-        
-    }
+.arrows img {
+    align-items: center;
 }
 
-@media screen and (min-width: 769px){
+.slideshow {
+    position: fixed;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 3rem;
+}
+
+.card {
+    position: fixed;
+    display: inline;
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(0,0,0,0);
+}
+
+.image-container {
+    width: 100%;
     
 }
 
-
-@media screen and (min-width: 1025px){
+.image-container img {
+    position: absolute;
+    width: 135px;
+    padding-left: 10px;
     
 }
 
+.adopted {
+    position: fixed;
+    width: 135px;
+    padding-left: 10px;
+}
 
-@media screen and (min-width: 1201px){
-    
+.info-container {
+    width: 45%;
+    margin-left: 9rem;
+}
+
+.info-container p {
+    color: #fff;
+    line-height: 0.4rem;
+}
+
+
+
+
+/* ---------------------------- */
+.blue {
+    color: #085a9e;
+}
+
+.pink {
+    color: #be5656;
+}
+
+.green {
+    color: #22DD22;
+}
+
+.white {
+    color: #FFF;
+}
+
+.pad {
+    margin-bottom: 15px;
 }
